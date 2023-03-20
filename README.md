@@ -11,6 +11,9 @@
 ### The bot didn't drop a kit, or it dropped multiple kits, is this a bug?
 > - The bot must walk to chests and withdraw the kits, then ensures it has the kit in inventory before sending the tp request, however if someone else requested a kit at the same time, it would deliver both kits to the person who accepted the teleport first, and the next will be delivered without kits if the player doesn't request a new one. But of course you can always request for another kit if it doesn't deliver. Dropping multiple kits occurs when the bot withdraws kits and the person doesn't accept the tp request.
 
+### How is the bot's ping so low?
+> - I found a funny exploit in keepalive packet keys, the bot sends the packets 10ms early, often making the bot show as 3-8ms. The reason I don't have it even faster is due to variations of ping the bot could and does have, if the bot sends the packet too early it will cause a connection timeout.
+
 ### It says the bot is currently out of kits, what should I do?
 > - Only the kit requested has been drained, and it will notify me in discord to fill it soon, you may of course request other kits until it is filled.
 
@@ -640,6 +643,8 @@ Several data types are collected and/or broadcasted when you use this service, f
 > Used to moderate the community, allows trusted staff to view full conversations if they get deleted, no messages in other Discord servers is logged.
 - User IDs of Discord users who run commands. [^6]
 > Needed to ensure users aren't spamming bot commands to attempt to crash the bot.
+- All messages sent in bridge channels. [^7]
+> Relayed to game through the bot, and analyzed to ensure users are not spamming the bridge.
 
 [^1]: Broadcasted to Discord, stored for 15 minutes.
 [^2]: Broadcasted to Discord, stored no longer than 30 minutes after logging off the server.
@@ -647,10 +652,11 @@ Several data types are collected and/or broadcasted when you use this service, f
 [^4]: Stored for 3 days.
 [^5]: All deleted messages get sent in a moderation logging channel.
 [^6]: Stored for 30 minutes.
+[^7]: Broadcasted to Minecraft, stored for 5 minutes.
 # Terms of Service
 
 - Do not attempt to crash, kick, rate limit, or cause any negative effects to the bot.
 
 - Do not "bot" the bot. This means you may only use it as needed, if you are caught simply spamming `!kit <name> 3` to fill your stash, you will be blacklisted, dupe for yourself.
 
-- Do not attempt to bypass automod for bridge. It is still my Minecraft account, so I get to choose what it says, filtered words are: `*ss, B*stard, C*ck, C*nt, D*ck, F*ck, F*g, N*gro N*g P*ssy Wh*re`
+- Do not attempt to bypass automod for bridge. It is still my Minecraft account, so I get to choose what it says, filtered words are: `*ss, B*stard, C*ck, C*nt, D*ck, F*ck, F*g, N*gro, N*g, P*ssy, and Wh*re.`
