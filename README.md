@@ -45,7 +45,7 @@ Commands with arguments use [ ] for non-required arguments and < > for required 
 > - `?help` Help command, supplies with [Discord Server invite](https://discord.gg/24NrjJZm4A) for support and this documentation.
 > - `?kick` Working kick exploits in other bots. (Developer Only)
 > - `?kill` Kill the bot.
-> - `?kit <name> [count]` Request a specific kit from the bot, check Selection of Kits below for the full list. **This is whitelist right now due to low stock and not being able to maintain if it was public.
+> - `?kit <name> [count]` Request a specific kit from the bot, check Selection of Kits below for the full list. **This is whitelist right now due to low stock and not being able to maintain if it was public.**
 > - `?reddit <subreddit>` Fetch the last reddit post from the specified subreddit.
 > - `?ping [username]` Shows your ping if no username given, otherwise will display the ping of the specified user.
 > - `?seed` Gives 0b0t.org seed -4172144997902289642 for people who can't look it up.
