@@ -2,7 +2,7 @@
 <h1>Aspect401_ Kitbot Documentation</h1>
 </div>
 
-> ## Join my [Discord](https://discord.gg/24NrjJZm4A) to vote in polls, use commands, get notified of updates, and more?
+> ## Join my [Discord](https://discord.gg/24NrjJZm4A) to vote in polls, use commands, get notified of updates, and more!
 
 # FAQ
 ### Where is the source code?
