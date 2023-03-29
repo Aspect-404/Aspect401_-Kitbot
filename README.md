@@ -2,7 +2,7 @@
 <h1>Aspect401_ Kitbot Documentation</h1>
 </div>
 
-> ## Join my [Discord](https://discord.gg/24NrjJZm4A) to vote in polls, use commands, get notified of updates, and more!
+> ## Join my [Discord](https://discord.gg/24NrjJZm4A) to vote in polls, use commands, get notified of updates, and more?
 
 # FAQ
 ### Where is the source code?
@@ -18,7 +18,7 @@
 > - Only the kit requested has been drained, and it will notify me in discord to fill it soon, you may of course request other kits until it is filled.
 
 ### It says I have been denied access to the service, how would I request an appeal?
-> - The blacklist is only temporary, as the bot counts how many requests made and analyzes usage to determine whether or not it is being abused. This is in place to prevent users from basically "relocating my stash to their base". There is a `!dupe` command, which links a [video tutorial](https://youtu.be/TdoypGpkcz0) of how to perform a chunk dupe, as well as `!kit dupe` will give you all you need to perform the dupe.
+> - The blacklist is only temporary, as the bot counts how many requests made and analyzes usage to determine whether or not it is being abused. This is in place to prevent users from basically "relocating my stash to their base". There is a `?dupe` command, which links a [video tutorial](https://youtu.be/TdoypGpkcz0) of how to perform a chunk dupe, as well as `?kit dupe` will give you all you need to perform the dupe.
 
 ### Is it a coordinate logger?
 > - No, it is not, the data collected and/or broadcasted is listed below under Privacy Policy.
@@ -32,23 +32,37 @@
 # Commands
 Commands with arguments use [ ] for non-required arguments and < > for required arguments.
 ### In-Game Commands
-> - `!afk [reason]` Sets yourself as afk in game, which will notify people that you are afk if they mention your username in chat, will automatically remove on next message or upon leaving the server.
-> - `!count [username]` Lists the total amount of kits delivered if no username given, otherwise will display the amount requested by the specified user.
-> - `!dupe` Links [this video](https://youtu.be/TdoypGpkcz0) to provide a tutorial on how to perform chunk dupe.
-> - `!help` Help command, supplies with [Discord Server invite](https://discord.gg/24NrjJZm4A) for support and [this](/readme.md) documentation.
-> - `!kit <name> [count]` Request a specific kit from the bot, check Selection of Kits below for the full list.
-> - `!uptime` Displays the uptime of the bot.
+
+
+
+> - `?afk [reason]` Sets yourself as afk in game, which will notify people that you are afk if they mention your username in chat, will automatically remove on next message or upon leaving the server.
+> - `?bestping` or `?bp` Replies with which player online has best ping.
+> - `?count [username]` Lists the total amount of kits delivered if no username given, otherwise will display the amount requested by the specified user.
+> - `?coords` Give the coordinates of the bot.
+> - `?copy` Copy everything the user says. (Developer Only)
+> - `?dupe` Links [this video](https://youtu.be/TdoypGpkcz0) to provide a tutorial on how to perform chunk dupe.
+> - `?health` Shows the health of the bot.
+> - `?help` Help command, supplies with [Discord Server invite](https://discord.gg/24NrjJZm4A) for support and this documentation.
+> - `?kill` Kill the bot.
+> - `?kit <name> [count]` Request a specific kit from the bot, check Selection of Kits below for the full list. **This is whitelist right now due to low stock and not being able to maintain if it was public.
+> - `?reddit <subreddit>` Fetch the last reddit post from the specified subreddit.
+> - `?ping [username]` Shows your ping if no username given, otherwise will display the ping of the specified user.
+> - `?tpdisable <username>` Teleport Exploit (Developer Only)
+> - `?uptime` Displays the uptime of the bot.
+> - `?urban <search>` Fetches the result from the [Urban Dictonary](https://urbandictionary.com/)
+> - `?worstping` or `?wp` Replies with which player online has worst ping.
 
 ### Discord Commands
 > - `/bot` Shows data regarding the bot, like ram usage and uptime.
+> - `/dev` Developer Options. (Developer Only)
 > - `/bridge <#channel>` Setup a channel to have a chat bridge, requires ADMINISTRATOR permissions on the server.
-> - `/server` Replies with information about 0b0t.org, such as players, their ping, TPS, and more!
+> - `/server` Replies with information about 0b0t.org, such as players, their ping, TPS, and more?
 
 # Selection of Kits
 <details>
 <summary>Standard Kit</summary>
 
-> Use `!kit standard [count]`
+> Use `?kit standard [count]`
 
 <img src="./images/Standard.png" alt="viewer" width="500">
 
@@ -61,7 +75,7 @@ NBT Data:
 <details>
 <summary>Pvp Kit</summary>
 
-> Use `!kit pvp [count]`
+> Use `?kit pvp [count]`
 
 <img src="./images/Pvp.png" alt="viewer" width="500">
 
@@ -74,7 +88,7 @@ NBT Data:
 <details>
 <summary>Regear Kit</summary>
 
-> Use `!kit regear [count]`
+> Use `?kit regear [count]`
 
 <img src="./images/Regear.png" alt="viewer" width="500">
 
@@ -87,20 +101,20 @@ NBT Data:
 <details>
 <summary>Kepterv Kit</summary>
 
-> Use `!kit kepterv [count]`
+> Use `?kit kepterv [count]`
 
 <img src="./images/Kepterv.png" alt="viewer" width="500">
 
 NBT Data:
 ```json
-{BlockEntityTag:{x:0,y:0,Items:[{Slot:0b,id:"minecraft:experience_bottle",Count:64b,Damage:0s},{Slot:1b,id:"minecraft:obsidian",Count:64b,Damage:0s},{Slot:2b,id:"minecraft:totem_of_undying",tag:{display:{Name:"Kepterv saves lifes"}},Count:1b,Damage:0s},{Slot:3b,id:"minecraft:totem_of_undying",tag:{display:{Name:"Kepterv saves lifes"}},Count:1b,Damage:0s},{Slot:4b,id:"minecraft:totem_of_undying",tag:{display:{Name:"Kepterv saves lifes"}},Count:1b,Damage:0s},{Slot:5b,id:"minecraft:diamond_boots",tag:{ench:[{lvl:4s,id:0s},{lvl:4s,id:2s},{lvl:2s,id:9s},{lvl:3s,id:34s},{lvl:1s,id:70s},{lvl:1s,id:71s}],RepairCost:3,display:{Name:"Keptervs yeezys"}},Count:1b,Damage:0s},{Slot:6b,id:"minecraft:diamond_leggings",tag:{ench:[{lvl:4s,id:3s},{lvl:3s,id:34s},{lvl:1s,id:70s},{lvl:1s,id:71s}],RepairCost:7,display:{Name:"femboy leggins"}},Count:1b,Damage:0s},{Slot:7b,id:"minecraft:diamond_chestplate",tag:{ench:[{lvl:4s,id:0s},{lvl:3s,id:34s},{lvl:1s,id:70s},{lvl:1s,id:71s}],RepairCost:7,display:{Name:"Manslut shirt"}},Count:1b,Damage:0s},{Slot:8b,id:"minecraft:diamond_helmet",tag:{ench:[{lvl:4s,id:0s},{lvl:3s,id:5s},{lvl:1s,id:6s},{lvl:3s,id:34s},{lvl:1s,id:70s},{lvl:1s,id:71s}],RepairCost:3,display:{Name:"Construction helmet"}},Count:1b,Damage:0s},{Slot:9b,id:"minecraft:end_crystal",Count:64b,Damage:0s},{Slot:10b,id:"minecraft:end_crystal",Count:64b,Damage:0s},{Slot:11b,id:"minecraft:obsidian",Count:64b,Damage:0s},{Slot:12b,id:"minecraft:potion",tag:{Potion:"minecraft:strong_strength",display:{Name:"§c§l<3 Kit by Kepterv <3§r"}},Count:1b,Damage:0s},{Slot:13b,id:"minecraft:totem_of_undying",tag:{display:{Name:"Kepterv saves lifes"}},Count:1b,Damage:0s},{Slot:14b,id:"minecraft:totem_of_undying",tag:{display:{Name:"Kepterv saves lifes"}},Count:1b,Damage:0s},{Slot:15b,id:"minecraft:totem_of_undying",tag:{display:{Name:"Kepterv saves lifes"}},Count:1b,Damage:0s},{Slot:16b,id:"minecraft:tipped_arrow",tag:{Potion:"minecraft:strong_harming",display:{Name:"Kepterv ouchies"}},Count:64b,Damage:0s},{Slot:17b,id:"minecraft:ender_chest",Count:64b,Damage:0s},{Slot:18b,id:"minecraft:bow",tag:{ench:[{lvl:3s,id:34s},{lvl:5s,id:48s},{lvl:2s,id:49s},{lvl:1s,id:50s},{lvl:1s,id:51s},{lvl:1s,id:71s}],RepairCost:15,display:{Name:"Keptervs cumthrower"}},Count:1b,Damage:0s},{Slot:19b,id:"minecraft:ender_pearl",tag:{display:{Name:"Keptervs balls"}},Count:16b,Damage:0s},{Slot:20b,id:"minecraft:chorus_fruit",tag:{display:{Name:"§f§lsecond chance to get out of box§r"}},Count:64b,Damage:0s},{Slot:21b,id:"minecraft:obsidian",Count:64b,Damage:0s},{Slot:22b,id:"minecraft:experience_bottle",Count:64b,Damage:0s},{Slot:23b,id:"minecraft:end_crystal",Count:64b,Damage:0s},{Slot:24b,id:"minecraft:golden_apple",tag:{display:{Name:"§5§lKeptervs health giver§r"}},Count:64b,Damage:1s},{Slot:25b,id:"minecraft:diamond_pickaxe",tag:{ench:[{lvl:5s,id:32s},{lvl:3s,id:34s},{lvl:3s,id:35s},{lvl:1s,id:70s}],RepairCost:3,display:{Name:"§b§lKepterv fastus pickus§r"}},Count:1b,Damage:0s},{Slot:26b,id:"minecraft:diamond_sword",tag:{ench:[{lvl:5s,id:16s},{lvl:2s,id:19s},{lvl:2s,id:20s},{lvl:3s,id:21s},{lvl:3s,id:22s},{lvl:3s,id:34s},{lvl:1s,id:70s},{lvl:1s,id:71s}],RepairCost:1,display:{Name:"§b§lKeptervlibor§r"}},Count:1b,Damage:0s}],z:0,id:"minecraft:shulker_box",Lock:""},display:{Name:"§c§lKeptervs pvp kit!§r"}}
+{BlockEntityTag:{x:0,y:0,Items:[{Slot:0b,id:"minecraft:experience_bottle",Count:64b,Damage:0s},{Slot:1b,id:"minecraft:obsidian",Count:64b,Damage:0s},{Slot:2b,id:"minecraft:totem_of_undying",tag:{display:{Name:"Kepterv saves lifes"}},Count:1b,Damage:0s},{Slot:3b,id:"minecraft:totem_of_undying",tag:{display:{Name:"Kepterv saves lifes"}},Count:1b,Damage:0s},{Slot:4b,id:"minecraft:totem_of_undying",tag:{display:{Name:"Kepterv saves lifes"}},Count:1b,Damage:0s},{Slot:5b,id:"minecraft:diamond_boots",tag:{ench:[{lvl:4s,id:0s},{lvl:4s,id:2s},{lvl:2s,id:9s},{lvl:3s,id:34s},{lvl:1s,id:70s},{lvl:1s,id:71s}],RepairCost:3,display:{Name:"Keptervs yeezys"}},Count:1b,Damage:0s},{Slot:6b,id:"minecraft:diamond_leggings",tag:{ench:[{lvl:4s,id:3s},{lvl:3s,id:34s},{lvl:1s,id:70s},{lvl:1s,id:71s}],RepairCost:7,display:{Name:"femboy leggins"}},Count:1b,Damage:0s},{Slot:7b,id:"minecraft:diamond_chestplate",tag:{ench:[{lvl:4s,id:0s},{lvl:3s,id:34s},{lvl:1s,id:70s},{lvl:1s,id:71s}],RepairCost:7,display:{Name:"Manslut shirt"}},Count:1b,Damage:0s},{Slot:8b,id:"minecraft:diamond_helmet",tag:{ench:[{lvl:4s,id:0s},{lvl:3s,id:5s},{lvl:1s,id:6s},{lvl:3s,id:34s},{lvl:1s,id:70s},{lvl:1s,id:71s}],RepairCost:3,display:{Name:"Construction helmet"}},Count:1b,Damage:0s},{Slot:9b,id:"minecraft:end_crystal",Count:64b,Damage:0s},{Slot:10b,id:"minecraft:end_crystal",Count:64b,Damage:0s},{Slot:11b,id:"minecraft:obsidian",Count:64b,Damage:0s},{Slot:12b,id:"minecraft:potion",tag:{Potion:"minecraft:strong_strength",display:{Name:"§c§l<3 Kit by Kepterv <3§r"}},Count:1b,Damage:0s},{Slot:13b,id:"minecraft:totem_of_undying",tag:{display:{Name:"Kepterv saves lifes"}},Count:1b,Damage:0s},{Slot:14b,id:"minecraft:totem_of_undying",tag:{display:{Name:"Kepterv saves lifes"}},Count:1b,Damage:0s},{Slot:15b,id:"minecraft:totem_of_undying",tag:{display:{Name:"Kepterv saves lifes"}},Count:1b,Damage:0s},{Slot:16b,id:"minecraft:tipped_arrow",tag:{Potion:"minecraft:strong_harming",display:{Name:"Kepterv ouchies"}},Count:64b,Damage:0s},{Slot:17b,id:"minecraft:ender_chest",Count:64b,Damage:0s},{Slot:18b,id:"minecraft:bow",tag:{ench:[{lvl:3s,id:34s},{lvl:5s,id:48s},{lvl:2s,id:49s},{lvl:1s,id:50s},{lvl:1s,id:51s},{lvl:1s,id:71s}],RepairCost:15,display:{Name:"Keptervs cumthrower"}},Count:1b,Damage:0s},{Slot:19b,id:"minecraft:ender_pearl",tag:{display:{Name:"Keptervs balls"}},Count:16b,Damage:0s},{Slot:20b,id:"minecraft:chorus_fruit",tag:{display:{Name:"§f§lsecond chance to get out of box§r"}},Count:64b,Damage:0s},{Slot:21b,id:"minecraft:obsidian",Count:64b,Damage:0s},{Slot:22b,id:"minecraft:experience_bottle",Count:64b,Damage:0s},{Slot:23b,id:"minecraft:end_crystal",Count:64b,Damage:0s},{Slot:24b,id:"minecraft:golden_apple",tag:{display:{Name:"§5§lKeptervs health giver§r"}},Count:64b,Damage:1s},{Slot:25b,id:"minecraft:diamond_pickaxe",tag:{ench:[{lvl:5s,id:32s},{lvl:3s,id:34s},{lvl:3s,id:35s},{lvl:1s,id:70s}],RepairCost:3,display:{Name:"§b§lKepterv fastus pickus§r"}},Count:1b,Damage:0s},{Slot:26b,id:"minecraft:diamond_sword",tag:{ench:[{lvl:5s,id:16s},{lvl:2s,id:19s},{lvl:2s,id:20s},{lvl:3s,id:21s},{lvl:3s,id:22s},{lvl:3s,id:34s},{lvl:1s,id:70s},{lvl:1s,id:71s}],RepairCost:1,display:{Name:"§b§lKeptervlibor§r"}},Count:1b,Damage:0s}],z:0,id:"minecraft:shulker_box",Lock:""},display:{Name:"§c§lKeptervs pvp kit?§r"}}
 ```
 <br>
 </details>
 <details>
 <summary>Elle Kit</summary>
 
-> Use `!kit elle [count]`
+> Use `?kit elle [count]`
 
 <img src="./images/Elle.png" alt="viewer" width="500">
 
@@ -113,7 +127,7 @@ NBT Data:
 <details>
 <summary>Gentle Kit</summary>
 
-> Use `!kit gentle [count]`
+> Use `?kit gentle [count]`
 
 <img src="./images/Gentle.png" alt="viewer" width="500">
 
@@ -126,7 +140,7 @@ NBT Data:
 <details>
 <summary>Para Kit</summary>
 
-> Use `!kit para [count]`
+> Use `?kit para [count]`
 
 <img src="./images/Para.png" alt="viewer" width="500">
 
@@ -139,7 +153,7 @@ NBT Data:
 <details>
 <summary>Grief Kit</summary>
 
-> Use `!kit grief [count]`
+> Use `?kit grief [count]`
 
 <img src="./images/Grief.png" alt="viewer" width="500">
 
@@ -162,7 +176,7 @@ NBT Data:
 <details>
 <summary>Obsidian Kit</summary>
 
-> Use `!kit obsidian [count]`
+> Use `?kit obsidian [count]`
 
 <img src="./images/Obsidian.png" alt="viewer" width="500">
 
@@ -175,7 +189,7 @@ NBT Data:
 <details>
 <summary>Crystal Kit</summary>
 
-> Use `!kit crystal [count]`
+> Use `?kit crystal [count]`
 
 <img src="./images/Crystal.png" alt="viewer" width="500">
 
@@ -188,7 +202,7 @@ NBT Data:
 <details>
 <summary>Xp Kit</summary>
 
-> Use `!kit xp [count]`
+> Use `?kit xp [count]`
 
 <img src="./images/Xp.png" alt="viewer" width="500">
 
@@ -201,7 +215,7 @@ NBT Data:
 <details>
 <summary>Totem Kit</summary>
 
-> Use `!kit totem [count]`
+> Use `?kit totem [count]`
 
 <img src="./images/Totem.png" alt="viewer" width="500">
 
@@ -214,7 +228,7 @@ NBT Data:
 <details>
 <summary>Gapple Kit</summary>
 
-> Use `!kit gapple [count]`
+> Use `?kit gapple [count]`
 
 <img src="./images/Gapple.png" alt="viewer" width="500">
 
@@ -227,7 +241,7 @@ NBT Data:
 <details>
 <summary>White Kit</summary>
 
-> Use `!kit white [count]`
+> Use `?kit white [count]`
 
 <img src="./images/White.png" alt="viewer" width="500">
 
@@ -240,7 +254,7 @@ NBT Data:
 <details>
 <summary>Light Gray Kit</summary>
 
-> Use `!kit light_gray [count]`
+> Use `?kit light_gray [count]`
 
 <img src="./images/Light_Gray.png" alt="viewer" width="500">
 
@@ -253,7 +267,7 @@ NBT Data:
 <details>
 <summary>Gray Kit</summary>
 
-> Use `!kit gray [count]`
+> Use `?kit gray [count]`
 
 <img src="./images/Gray.png" alt="viewer" width="500">
 
@@ -266,7 +280,7 @@ NBT Data:
 <details>
 <summary>Black Kit</summary>
 
-> Use `!kit black [count]`
+> Use `?kit black [count]`
 
 <img src="./images/Black.png" alt="viewer" width="500">
 
@@ -279,7 +293,7 @@ NBT Data:
 <details>
 <summary>Red Kit</summary>
 
-> Use `!kit red [count]`
+> Use `?kit red [count]`
 
 <img src="./images/Red.png" alt="viewer" width="500">
 
@@ -292,7 +306,7 @@ NBT Data:
 <details>
 <summary>Pink Kit</summary>
 
-> Use `!kit pink [count]`
+> Use `?kit pink [count]`
 
 <img src="./images/Pink.png" alt="viewer" width="500">
 
@@ -305,7 +319,7 @@ NBT Data:
 <details>
 <summary>Orange Kit</summary>
 
-> Use `!kit orange [count]`
+> Use `?kit orange [count]`
 
 <img src="./images/Orange.png" alt="viewer" width="500">
 
@@ -318,7 +332,7 @@ NBT Data:
 <details>
 <summary>Yellow Kit</summary>
 
-> Use `!kit yellow [count]`
+> Use `?kit yellow [count]`
 
 <img src="./images/Yellow.png" alt="viewer" width="500">
 
@@ -331,7 +345,7 @@ NBT Data:
 <details>
 <summary>Brown Kit</summary>
 
-> Use `!kit brown [count]`
+> Use `?kit brown [count]`
 
 <img src="./images/Brown.png" alt="viewer" width="500">
 
@@ -344,7 +358,7 @@ NBT Data:
 <details>
 <summary>Lime Kit</summary>
 
-> Use `!kit lime [count]`
+> Use `?kit lime [count]`
 
 <img src="./images/Lime.png" alt="viewer" width="500">
 
@@ -357,7 +371,7 @@ NBT Data:
 <details>
 <summary>Green Kit</summary>
 
-> Use `!kit green [count]`
+> Use `?kit green [count]`
 
 <img src="./images/Green.png" alt="viewer" width="500">
 
@@ -370,7 +384,7 @@ NBT Data:
 <details>
 <summary>Light Blue Kit</summary>
 
-> Use `!kit light_blue [count]`
+> Use `?kit light_blue [count]`
 
 <img src="./images/Light_Blue.png" alt="viewer" width="500">
 
@@ -383,7 +397,7 @@ NBT Data:
 <details>
 <summary>Cyan Kit</summary>
 
-> Use `!kit cyan [count]`
+> Use `?kit cyan [count]`
 
 <img src="./images/Cyan.png" alt="viewer" width="500">
 
@@ -396,7 +410,7 @@ NBT Data:
 <details>
 <summary>Blue Kit</summary>
 
-> Use `!kit blue [count]`
+> Use `?kit blue [count]`
 
 <img src="./images/Blue.png" alt="viewer" width="500">
 
@@ -409,7 +423,7 @@ NBT Data:
 <details>
 <summary>Magenta Kit</summary>
 
-> Use `!kit magenta [count]`
+> Use `?kit magenta [count]`
 
 <img src="./images/Magenta.png" alt="viewer" width="500">
 
@@ -422,7 +436,7 @@ NBT Data:
 <details>
 <summary>Purple Kit</summary>
 
-> Use `!kit purple [count]`
+> Use `?kit purple [count]`
 
 <img src="./images/Purple.png" alt="viewer" width="500">
 
@@ -435,7 +449,7 @@ NBT Data:
 <details>
 <summary>Base Kit</summary>
 
-> Use `!kit base [count]`
+> Use `?kit base [count]`
 
 <img src="./images/Base.png" alt="viewer" width="500">
 
@@ -448,7 +462,7 @@ NBT Data:
 <details>
 <summary>Party Kit</summary>
 
-> Use `!kit party [count]`
+> Use `?kit party [count]`
 
 <img src="./images/Party.png" alt="viewer" width="500">
 
@@ -461,7 +475,7 @@ NBT Data:
 <details>
 <summary>Beacon Kit</summary>
 
-> Use `!kit beacon [count]`
+> Use `?kit beacon [count]`
 
 <img src="./images/Beacon.png" alt="viewer" width="500">
 
@@ -474,7 +488,7 @@ NBT Data:
 <details>
 <summary>Natural Kit</summary>
 
-> Use `!kit natural [count]`
+> Use `?kit natural [count]`
 
 <img src="./images/Natural.png" alt="viewer" width="500">
 
@@ -487,7 +501,7 @@ NBT Data:
 <details>
 <summary>Stone Kit</summary>
 
-> Use `!kit stone [count]`
+> Use `?kit stone [count]`
 
 <img src="./images/Stone.png" alt="viewer" width="500">
 
@@ -500,7 +514,7 @@ NBT Data:
 <details>
 <summary>Wood Kit</summary>
 
-> Use `!kit wood [count]`
+> Use `?kit wood [count]`
 
 <img src="./images/Wood.png" alt="viewer" width="500">
 
@@ -513,7 +527,7 @@ NBT Data:
 <details>
 <summary>Nether Kit</summary>
 
-> Use `!kit nether [count]`
+> Use `?kit nether [count]`
 
 <img src="./images/Nether.png" alt="viewer" width="500">
 
@@ -526,7 +540,7 @@ NBT Data:
 <details>
 <summary>Redstone Kit</summary>
 
-> Use `!kit redstone [count]`
+> Use `?kit redstone [count]`
 
 <img src="./images/Redstone.png" alt="viewer" width="500">
 
@@ -539,7 +553,7 @@ NBT Data:
 <details>
 <summary>Prismarine Kit</summary>
 
-> Use `!kit prismarine [count]`
+> Use `?kit prismarine [count]`
 
 <img src="./images/Prismarine.png" alt="viewer" width="500">
 
@@ -552,7 +566,7 @@ NBT Data:
 <details>
 <summary>Quartz Kit</summary>
 
-> Use `!kit quartz [count]`
+> Use `?kit quartz [count]`
 
 <img src="./images/Quartz.png" alt="viewer" width="500">
 
@@ -565,7 +579,7 @@ NBT Data:
 <details>
 <summary>Mapart Kit</summary>
 
-> Use `!kit mapart [count]`
+> Use `?kit mapart [count]`
 
 <img src="./images/Mapart.png" alt="viewer" width="500">
 
@@ -578,7 +592,7 @@ NBT Data:
 <details>
 <summary>Taming Kit</summary>
 
-> Use `!kit taming [count]`
+> Use `?kit taming [count]`
 
 <img src="./images/Taming.png" alt="viewer" width="500">
 
@@ -591,7 +605,7 @@ NBT Data:
 <details>
 <summary>Travel Kit</summary>
 
-> Use `!kit travel [count]`
+> Use `?kit travel [count]`
 
 <img src="./images/Travel.png" alt="viewer" width="500">
 
@@ -604,7 +618,7 @@ NBT Data:
 <details>
 <summary>Brewing Kit</summary>
 
-> Use `!kit brewing [count]`
+> Use `?kit brewing [count]`
 
 <img src="./images/Brewing.png" alt="viewer" width="500">
 
@@ -617,7 +631,7 @@ NBT Data:
 <details>
 <summary>Dupe Kit</summary>
 
-> Use `!kit dupe [count]`
+> Use `?kit dupe [count]`
 
 <img src="./images/Dupe.png" alt="viewer" width="500">
 
@@ -636,7 +650,7 @@ Several data types are collected and/or broadcasted when you use this service, f
 - Usernames of all players who join or leave 0b0t.org. [^2]
 > This is also sent to chat bridges, and upon leave it will remove afk status, additionally shown in `/server` Discord command.
 - UUIDs of players who run in-game commands. [^3]
-> This is collected for analytics to avoid command spam and monitor how many times a player has used the bot, publicly able to be seen using `!count [username]` command.
+> This is collected for analytics to avoid command spam and monitor how many times a player has used the bot, publicly able to be seen using `?count [username]` command.
 - The names and quantity of kits you request. [^4]
 > Used to check stock of kits and how often players use different kits, for community feedback on best kits and changes to be made, does not store the player who requests kits.
 - Deleted messages in the [official server](https://discord.gg/24NrjJZm4A). [^5]
@@ -648,7 +662,7 @@ Several data types are collected and/or broadcasted when you use this service, f
 
 [^1]: Broadcasted to Discord, stored for 15 minutes.
 [^2]: Broadcasted to Discord, stored no longer than 30 minutes after logging off the server.
-[^3]: All commands executed store for 5 minutes, using `!kit <name>` command stores UUID permanently.
+[^3]: All commands executed store for 5 minutes, using `?kit <name>` command stores UUID permanently.
 [^4]: Stored for 3 days.
 [^5]: All deleted messages get sent in a moderation logging channel.
 [^6]: Stored for 30 minutes.
@@ -657,6 +671,6 @@ Several data types are collected and/or broadcasted when you use this service, f
 
 - Do not attempt to crash, kick, rate limit, or cause any negative effects to the bot.
 
-- Do not "bot" the bot. This means you may only use it as needed, if you are caught simply spamming `!kit <name> 3` to fill your stash, you will be blacklisted, dupe for yourself.
+- Do not "bot" the bot. This means you may only use it as needed, if you are caught simply spamming `?kit <name> 3` to fill your stash, you will be blacklisted, dupe for yourself.
 
-- Do not attempt to bypass automod for bridge. It is still my Minecraft account, so I get to choose what it says, filtered words are: `*ss, B*stard, C*ck, C*nt, D*ck, F*ck, F*g, N*gro, N*g, P*ssy, and Wh*re.`
+- Do not attempt to bypass automod for bridge. It is still my Minecraft account, so I get to choose what it says, filtered words are: `*ssh*le, B*stard, C*ck, C*nt, D*ck, F*ck, F*g, N*gro, N*gg, P*ssy, and Wh*re.`
