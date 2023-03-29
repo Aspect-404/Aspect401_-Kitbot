@@ -43,10 +43,12 @@ Commands with arguments use [ ] for non-required arguments and < > for required 
 > - `?dupe` Links [this video](https://youtu.be/TdoypGpkcz0) to provide a tutorial on how to perform chunk dupe.
 > - `?health` Shows the health of the bot.
 > - `?help` Help command, supplies with [Discord Server invite](https://discord.gg/24NrjJZm4A) for support and this documentation.
+> - `?kick` Working kick exploits in other bots. (Developer Only)
 > - `?kill` Kill the bot.
 > - `?kit <name> [count]` Request a specific kit from the bot, check Selection of Kits below for the full list. **This is whitelist right now due to low stock and not being able to maintain if it was public.
 > - `?reddit <subreddit>` Fetch the last reddit post from the specified subreddit.
 > - `?ping [username]` Shows your ping if no username given, otherwise will display the ping of the specified user.
+> - `?seed` Gives 0b0t.org seed -4172144997902289642 for people who can't look it up.
 > - `?tpdisable <username>` Teleport Exploit (Developer Only)
 > - `?uptime` Displays the uptime of the bot.
 > - `?urban <search>` Fetches the result from the [Urban Dictonary](https://urbandictionary.com/)
@@ -56,7 +58,7 @@ Commands with arguments use [ ] for non-required arguments and < > for required 
 > - `/bot` Shows data regarding the bot, like ram usage and uptime.
 > - `/dev` Developer Options. (Developer Only)
 > - `/bridge <#channel>` Setup a channel to have a chat bridge, requires ADMINISTRATOR permissions on the server.
-> - `/server` Replies with information about 0b0t.org, such as players, their ping, TPS, and more?
+> - `/server` Replies with information about 0b0t.org, such as players, their ping, TPS, and more!
 
 # Selection of Kits
 <details>
