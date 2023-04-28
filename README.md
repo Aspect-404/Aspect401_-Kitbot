@@ -643,6 +643,19 @@ NBT Data:
 ```
 <br>
 </details>
+<details>
+<summary>Notebot Kit</summary>
+
+> Use `?kit notebot [count]`
+
+<img src="./images/Notebot.png" alt="viewer" width="500">
+
+NBT Data:
+```json
+{BlockEntityTag:{CustomName:"feliscatusmeows notebot kit",x:0,y:0,z:0,Items:[{Slot:0b,id:"minecraft:noteblock",Count:64b,Damage:0s},{Slot:1b,id:"minecraft:noteblock",Count:64b,Damage:0s},{Slot:2b,id:"minecraft:noteblock",Count:64b,Damage:0s},{Slot:3b,id:"minecraft:noteblock",Count:64b,Damage:0s},{Slot:4b,id:"minecraft:noteblock",Count:64b,Damage:0s},{Slot:5b,id:"minecraft:noteblock",Count:64b,Damage:0s},{Slot:6b,id:"minecraft:noteblock",Count:64b,Damage:0s},{Slot:7b,id:"minecraft:noteblock",Count:64b,Damage:0s},{Slot:8b,id:"minecraft:noteblock",Count:64b,Damage:0s},{Slot:9b,id:"minecraft:stone",Count:64b,Damage:0s},{Slot:10b,id:"minecraft:log",Count:64b,Damage:0s},{Slot:11b,id:"minecraft:soul_sand",Count:64b,Damage:0s},{Slot:12b,id:"minecraft:glass",Count:64b,Damage:0s},{Slot:13b,id:"minecraft:wool",Count:64b,Damage:0s},{Slot:14b,id:"minecraft:bone_block",Count:64b,Damage:0s},{Slot:15b,id:"minecraft:gold_block",Count:64b,Damage:0s},{Slot:16b,id:"minecraft:clay",Count:64b,Damage:0s},{Slot:17b,id:"minecraft:packed_ice",Count:64b,Damage:0s},{Slot:18b,id:"minecraft:stone",Count:64b,Damage:0s},{Slot:19b,id:"minecraft:log",Count:64b,Damage:0s},{Slot:20b,id:"minecraft:soul_sand",Count:64b,Damage:0s},{Slot:21b,id:"minecraft:glass",Count:64b,Damage:0s},{Slot:22b,id:"minecraft:wool",Count:64b,Damage:0s},{Slot:23b,id:"minecraft:noteblock",Count:64b,Damage:0s},{Slot:24b,id:"minecraft:noteblock",Count:64b,Damage:0s},{Slot:25b,id:"minecraft:noteblock",Count:64b,Damage:0s},{Slot:26b,id:"minecraft:noteblock",Count:64b,Damage:0s}],id:"minecraft:shulker_box",Lock:""},display:{Name:"feliscatusmeows notebot kit"}}
+```
+<br>
+</details>
 
 # Privacy Policy
 Several data types are collected and/or broadcasted when you use this service, full list and purposes are shown below.
