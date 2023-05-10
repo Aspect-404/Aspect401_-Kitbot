@@ -27,38 +27,62 @@
 > - You could join the [Official Server](https://discord.gg/24NrjJZm4A) and click on the bot's about me, it will have a button saying "Add to Server", by pressing it would open the default authorization (OAuth2) [link](https://ptb.discord.com/api/oauth2/authorize?client_id=1024403286968762368&permissions=1566254169297&scope=bot%20applications.commands). The bot uses slash commands, so by typing `/bridge` it will open the menu to setup the bridge channel. (**NOTE**: Invite has all perms needed to use the bot and bridge; but channel overrides are a pain, be sure to check it at least has perms for the bridge channel to make webhooks, edit the channel topic, etc. If missing permissions, it will reply with the permissions needed to setup.)
 
 ### What did you use to program the bot?
-> - I started out with the [Mineflayer](https://github.com/PrismarineJS/mineflayer) library, but have recently migrated to using the plain [Minecraft-Protocol](https://github.com/PrismarineJS/node-minecraft-protocol) library so I can tweak with the packets more directly, allowing more features. Additional Credits: [Colors](https://github.com/Marak/colors.js) for clearer console logging. [Discord.js](https://github.com/discordjs/discord.js) for Discord integration. [Future AntiVanish Module](https://www.futureclient.net/) class dump from the [Gopro Archive](https://github.com/The-Gopro336-Archive/FutureDeobf/tree/master/net/futureclient/client/modules/miscellaneous/antivanish) for revealing hidden players. [Linode Cloud](https://www.linode.com/) (I previously used [Contabo](https://contabo.com/)) for hosting service. [MC-Heads API](https://mc-heads.net/) for player heads in bridges. [Mojang API](https://api.mojang.com/users/profiles/minecraft/Aspect404_) for fetching UUIDs of players. [MongoDB Atlas](https://www.mongodb.com/atlas/database) for databases. [Mongoose](https://github.com/Automattic/mongoose) for MongoDB object modeling. [Node-Fetch](https://github.com/node-fetch/node-fetch) for HTTP requests to APIs and Discord webhooks. [Pratax](https://github.com/Prataxx/) for the idea of creating this project. [Vec3](https://github.com/PrismarineJS/node-vec3) for relative locations of the kit chests. This project is not forked or skidded from another bot, this is original.
+> - I started out with the [Mineflayer](https://github.com/PrismarineJS/mineflayer) library, but have migrated to using the plain [Minecraft-Protocol](https://github.com/PrismarineJS/node-minecraft-protocol) library so I can tweak with the packets more directly, allowing more features. I then recently partially migrated back so I would be able to use the [Mineflayer-Pathfinder](https://github.com/PrismarineJS/mineflayer-pathfinder) Plugin. Additional Credits: [Colors](https://github.com/Marak/colors.js) for clearer console logging. [Discord.js](https://github.com/discordjs/discord.js) for Discord integration. [Future AntiVanish Module](https://www.futureclient.net/) class dump from the [Gopro Archive](https://github.com/The-Gopro336-Archive/FutureDeobf/tree/master/net/futureclient/client/modules/miscellaneous/antivanish) for revealing hidden players. [Linode Cloud](https://www.linode.com/) (I previously used [Contabo](https://contabo.com/)) for hosting service. [MC-Heads API](https://mc-heads.net/) for player heads in bridges. [Mojang API](https://api.mojang.com/users/profiles/minecraft/Aspect404_) for fetching UUIDs of players. [MongoDB Atlas](https://www.mongodb.com/atlas/database) for databases. [Mongoose](https://github.com/Automattic/mongoose) for MongoDB object modeling. [Node-Fetch](https://github.com/node-fetch/node-fetch) for HTTP requests to APIs and Discord webhooks. [OpenAI](https://platform.openai.com/overview) for streaming ChatGPT responses. [Pratax](https://github.com/Prataxx/) for the idea of creating this project. [Vec3](https://github.com/PrismarineJS/node-vec3) for relative locations of the kit chests. This project is not forked or skidded from another bot, this is original.
 
 # Commands
 Commands with arguments use [ ] for non-required arguments and < > for required arguments.
 ### In-Game Commands
 
-
-
+**Public**
 > - `?afk [reason]` Sets yourself as afk in game, which will notify people that you are afk if they mention your username in chat, will automatically remove on next message or upon leaving the server.
-> - `?bestping` or `?bp` Replies with which player online has best ping.
-> - `?count [username]` Lists the total amount of kits delivered if no username given, otherwise will display the amount requested by the specified user.
+> - `?bestping` Replies with which player online has best ping.
+> - `?chatgpt <question>` Use OpenAI API to answer questions, and upload response to pastebin.
 > - `?coords` Give the coordinates of the bot.
-> - `?copy` Copy everything the user says. (Developer Only)
+> - `?count [username]` Lists the total amount of kits delivered if no username given, otherwise will display the amount requested by the specified user.
 > - `?dupe` Links [this video](https://youtu.be/TdoypGpkcz0) to provide a tutorial on how to perform chunk dupe.
+> - `?end [x-coord] [z-coord]` Shows the location of the nearest known end portal.
 > - `?health` Shows the health of the bot.
 > - `?help` Help command, supplies with [Discord Server invite](https://discord.gg/24NrjJZm4A) for support and this documentation.
-> - `?kick` Working kick exploits in other bots. (Developer Only)
 > - `?kill` Kill the bot.
-> - `?kit <name> [count]` Request a specific kit from the bot, check Selection of Kits below for the full list. **This is whitelist right now due to low stock and not being able to maintain if it was public.**
-> - `?reddit <subreddit>` Fetch the last reddit post from the specified subreddit.
+> - `?lastredditpost <subreddit>` Fetch the last reddit post from the specified subreddit.
+> - `?link` Link your Minecraft and Discord account. (Doesn't fully work yet)
+> - `?nearby` Show the nearest players.
 > - `?ping [username]` Shows your ping if no username given, otherwise will display the ping of the specified user.
 > - `?seed` Gives 0b0t.org seed -4172144997902289642 for people who can't look it up.
-> - `?tpdisable <username>` Teleport Exploit (Developer Only)
+> - `?topredditpost` Fetch the best reddit post in the last week from the specified subreddit.
 > - `?uptime` Displays the uptime of the bot.
 > - `?urban <search>` Fetches the result from the [Urban Dictonary](https://urbandictionary.com/)
-> - `?worstping` or `?wp` Replies with which player online has worst ping.
+> - `?worstping` Replies with which player online has worst ping.
+
+**Whitelist**
+> - `?kit <name> [count]` Request a specific kit from the bot, check Selection of Kits below for the full list.
+> - `?notebot` My attempt at a notebot. (Doesn't fully work yet)
+
+**Admin**
+> - `?blacklist <add/del/status> <username>` Blacklist a player from the bot.
+> - `?come` TP to the player.
+> - `?cookie` Give a Microsoft account session cookie. (Doesn't fully work yet)
+> - `?copy [delay]` Copy everything the user says.
+> - `?follow` Follow the player.
+> - `?kick <username>` Known working kick exploits in other bots.
+> - `?stop` Tell the bot to stop following.
+> - `?tpdisable <username>` Teleport Exploit.
+> - `?whitelist <add/del/status> <username>` Whitelist a player.
 
 ### Discord Commands
+
+**Public**
+> - `/bestping` Replies with which player online has best ping.
 > - `/bot` Shows data regarding the bot, like ram usage and uptime.
-> - `/dev` Developer Options. (Developer Only)
 > - `/bridge <#channel>` Setup a channel to have a chat bridge, requires ADMINISTRATOR permissions on the server.
+> - `/link` Link your Minecraft and Discord account. (Doesn't fully work yet)
+> - `/nearby` Show the nearest players.
 > - `/server` Replies with information about 0b0t.org, such as players, their ping, TPS, and more!
+> - `/worstping` Replies with which player online has worst ping.
+
+**Admin**
+> - `/blacklist <Minecraft UUID/Discord ID>` Blacklist a person from the bot.
+> - `/dev` Developer Options.
 
 # Selection of Kits
 <details>
