@@ -94,7 +94,7 @@ Commands with arguments use [ ] for non-required arguments and < > for required 
 > - `/dev` Developer Options.
 
 # Selection of Kits
-currently only standard, pvp, regear, elle, kepterv, para, gentle, taming, brewing, dupe, beacon, armor, grief, mapart, travel, party, gapple, and redstone are available without whitelist, I'll add more later.
+# **Currently only standard, pvp, regear, elle, kepterv, para, gentle, taming, brewing, dupe, beacon, armor, grief, mapart, travel, party, gapple, and redstone are available without whitelist, I'll add more later.**
 <details>
 <summary>Standard Kit</summary>
 
