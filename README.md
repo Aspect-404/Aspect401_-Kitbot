@@ -34,38 +34,52 @@ Commands with arguments use [ ] for non-required arguments and < > for required 
 ### In-Game Commands
 
 **Public**
+
 > - `?afk [reason]` Sets yourself as afk in game, which will notify people that you are afk if they mention your username in chat, will automatically remove on next message or upon leaving the server.
+> - `?ban <player> [reason]` Troll command, "bans" the player.
 > - `?bestping` Replies with which player online has best ping.
 > - `?chatgpt <question>` Use OpenAI API to answer questions, and upload response to pastebin.
-> - `?coords` Give the coordinates of the bot.
-> - `?count [username]` Lists the total amount of kits delivered if no username given, otherwise will display the amount requested by the specified user.
+> - `?coords` Troll command, give the coordinates of the bot.
+> - `?count [dupes/kits/orders/total] <username>` Lists the total amount of kits delivered if no username given, otherwise will display the amount requested by the specified user.
 > - `?dupe` Links [this video](https://youtu.be/TdoypGpkcz0) to provide a tutorial on how to perform chunk dupe.
 > - `?end [x-coord] [z-coord]` Shows the location of the nearest known end portal.
 > - `?health` Shows the health of the bot.
 > - `?help` Help command, supplies with [Discord Server invite](https://discord.gg/24NrjJZm4A) for support and this documentation.
-> - `?kill` Kill the bot.
+> - `?kill` Troll command, "/kills" the bot.
+> - `?kit <name> [count]` Request a specific kit from the bot, check Selection of Kits below for the full list, up to 9 at a time.
 > - `?lastredditpost <subreddit>` Fetch the last reddit post from the specified subreddit.
-> - `?link` Link your Minecraft and Discord account. (Doesn't fully work yet)
+> - `?mute <player> [reason]` Troll command, "mutes" the player.
+> - `?namehistory <username>` Shows the namehistory of a player.
 > - `?nearby` Show the nearest players.
 > - `?ping [username]` Shows your ping if no username given, otherwise will display the ping of the specified user.
+> - `?pirate <message>` Speaks like a pirate!
+> - `?report <player> [reason]` Troll command, "reports" the player.
+> - `?rules` Troll command, announces the server rules.
 > - `?seed` Gives 0b0t.org seed -4172144997902289642 for people who can't look it up.
+> - `?server <server ip>` Shows info about a minecraft server.
 > - `?topredditpost` Fetch the best reddit post in the last week from the specified subreddit.
+> - `?tps` An actually usable server ticks per second counter to detect lag. (Server tablist doesn't update it correctly and other bots aren't accurate)
 > - `?uptime` Displays the uptime of the bot.
 > - `?urban <search>` Fetches the result from the [Urban Dictonary](https://urbandictionary.com/)
+> - `?vanished` Fetches vanished players.
+> - `?version` Says how long ago that minecraft version was released.
+> - `?worldsize <version> <max-world-size>` Estimate the world size of a completely filled out minecraft world in a specified version.
 > - `?worstping` Replies with which player online has worst ping.
 
 **Whitelist**
-> - `?kit <name> [count]` Request a specific kit from the bot, check Selection of Kits below for the full list.
-> - `?notebot` My attempt at a notebot. (Doesn't fully work yet)
+> - `?come` TPA to the player.
+> - `?follow` Follow the player.
+> - `?link` Link your Minecraft and Discord account. (Doesn't fully work yet)
+> - `?notebot <song> [tune]` My attempt at a notebot. (Doesn't fully work yet)
+> - `?return` Bot /kills back to the base
+> - `?stop` Tell the bot to stop following.
 
 **Admin**
-> - `?blacklist <add/del/status> <username>` Blacklist a player from the bot.
-> - `?come` TP to the player.
+> - `?alias <add/del/list> [command] [alias]` Add a command alias. (Doesn't fully work yet)
+> - `?blacklist <add/del/status> <username> [reason]` Blacklist a player from the bot.
 > - `?cookie` Give a Microsoft account session cookie. (Doesn't fully work yet)
 > - `?copy [delay]` Copy everything the user says.
-> - `?follow` Follow the player.
 > - `?kick <username>` Known working kick exploits in other bots.
-> - `?stop` Tell the bot to stop following.
 > - `?tpdisable <username>` Teleport Exploit.
 > - `?whitelist <add/del/status> <username>` Whitelist a player.
 
@@ -73,18 +87,14 @@ Commands with arguments use [ ] for non-required arguments and < > for required 
 
 **Public**
 > - `/bestping` Replies with which player online has best ping.
-> - `/bot` Shows data regarding the bot, like ram usage and uptime.
-> - `/bridge <#channel>` Setup a channel to have a chat bridge, requires ADMINISTRATOR permissions on the server.
-> - `/link` Link your Minecraft and Discord account. (Doesn't fully work yet)
-> - `/nearby` Show the nearest players.
-> - `/server` Replies with information about 0b0t.org, such as players, their ping, TPS, and more!
+> - `/server` Creates a render about 0b0t.org, such as players (including vanished), their ping, TPS, and more!
 > - `/worstping` Replies with which player online has worst ping.
 
 **Admin**
-> - `/blacklist <Minecraft UUID/Discord ID>` Blacklist a person from the bot.
 > - `/dev` Developer Options.
 
 # Selection of Kits
+currently only standard, pvp, regear, elle, kepterv, para, gentle, taming, brewing, dupe, beacon, armor, grief, mapart, travel, party, gapple, and redstone are available without whitelist, I'll add more later.
 <details>
 <summary>Standard Kit</summary>
 
